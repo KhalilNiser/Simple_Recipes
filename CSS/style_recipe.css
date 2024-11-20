@@ -1,0 +1,771 @@
+
+/*              ---- JOSEFIN_SLAB_FONT_GOOGLE_FONTS_LINK ---- */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yesteryear&display=swap');
+
+/*              ---- SACRAMENTO_FONT_GOOGLE_FONTS_LINK ---- */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/*              ---- SIMPLE_RECIPES_CSS_CODE ---- */
+html 
+{
+    /* Prevents the browser frrom displaying a right to left
+    scroll bar as a result of negative margin values */
+    overflow-x: hidden;
+
+    /* Creates a smooth scrolling effect when a
+    bookmark link is clicked */
+    scroll-behavior: smooth;
+}
+
+/*              ---- NAVBAR ---- */
+.nav-bar 
+{
+    /* Creates a sticky element that stays in the same
+    spot on the browser screen */
+    position: sticky;
+
+    /* This is telling the browser to keep the said data element 
+    at the top of the page based on user scrolling */
+    top: 0;
+
+    /* Sets the stack layer of the navbar to scroll
+    over all the elements */
+    z-index: 9;
+}
+
+/*              ---- <UL>_ELEMENTS ---- */
+ul
+{
+    /* Creates a flex-container which expands/shrinks the specified
+    elements to fill any available space to them and place the 
+    elements side by side horizontally */
+    display: flex;
+
+    /* Removes default styling for all "<ul>" list elements */
+    align-items: center;
+
+    /* Margin order is "top, right, bottom, and left," respectively.
+    NOTE: The negative margins will stretch the background element
+    beyond the edge of the browser screen */
+    margin: -8px -8px 0px -8px;
+    background-color: rgb( 1, 128, 106 );
+    border-bottom: 5px solid rgb( 247, 177, 188 );
+}
+
+/*              ---- ANCHOR_TAG_<a>_ELEMENTS ---- */
+a 
+{
+    font-family: "Josefin Slab", serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb( 247, 177, 188 );
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+    /* Displays anchor tag elements vertically on a new line. 
+    This was added so that the dropdown menu displays vertically
+    rather than horizontally on the screen */
+    display: block;
+}
+
+/*              ---- <a>_HOVER ---- */
+/* "only-of-type" effects only the child element nested within
+an element. NOTE: This will keep my background color blue
+while hovering, and the text white when the mouse is moved
+over the "<a>" elements in the "rollover-menu" div */
+a:hover, .drop:hover a:only-of-type
+{
+    background-color: rgb( 149, 238, 223 );
+    color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba( 0, 0, 0, 0.7 );
+    transition: background-color 0.3s ease-in;
+}
+
+/*              ---- ROLLOVER-MENU */
+.rollover-menu 
+{
+    /* Prevents theanchor links in the div from showing on
+    the web browser until otherwise specified */
+    display: none;
+
+    /* Absolute profile attribute will position the div element
+    relative to the position of its parent element */
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba( 0, 0, 0, 0.2 );
+}
+
+
+/*              ---- DROP:Hover_ROLLOVER-MENU ---- */
+.drop:hover .rollover-menu
+{
+    /* creates a trigger effect when the user hovers the mouse
+    over the recipe link. The triger will display all the elements
+    within the "rollover-menu" class div element */
+    display: block;
+}
+
+
+/*              ---- ROLLOVER-MENU_<a> ---- */
+.rollover-menu a
+{
+    color: rgb( 0, 80, 67 );
+}
+
+
+/*              ---- ROLLOVER-MENU_<a>_HOVER ---- */
+.rollover-menu a:hover
+{
+    color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba( 90, 90, 90, 0.2 );
+}
+
+
+/*              ---- ROLLOVER-MENU_<a>_nth_CHILD ---- 
+Tasrgeting the "first" element from the rollover-menu 
+anchor tag <a> list
+*/
+.rollover-menu a:nth-child( 1 )
+{
+    border-top: 5px solid rgb( 238, 118, 136 );
+}
+
+
+
+/*              ---- FOOTER ---- */
+footer 
+{
+    /* This will align nested "HTML" elements in the
+    center i.e. the table data and paragraph elements
+    in the footer tag */
+    align-items: center;
+
+    /* Stretches the footer background beyond the browser's
+    edge. Leaving no white spaces */
+    margin: 0px -8px -8px -8px;
+
+    background-color: rgb( 1, 128, 106 );
+    border-top: 5px solid rgb( 247, 177, 188 );
+
+    /* Positions the "footer", at the bottom of the screen */
+    bottom: 0;
+}
+
+
+/*              ---- TABLE ---- */
+table
+{
+    /* Will take up the full width of the bowser */
+    width: 100%;
+}
+
+
+/*              ---- TABLE_CELL_<td>:_Table Data */
+td 
+{
+    /* Table dta will take up 1/3 of the space available
+    on the browser screen */
+    width: 33%;
+}
+
+
+/*              ---- TABLE_CELL_<td>_PARAGRAPh_<p> ---- */
+td p
+{
+    font-family: "Josefin Slab", serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb( 247, 177, 188 );
+}
+
+
+/*              ---- BODY ---- */
+.container
+{
+    display: inline-block;
+    background-size: 100%;
+    padding: 60px;
+    padding-left: 30px;
+}
+
+
+/*              ---- HEADERS ---- */
+h1
+{
+    font-family: "Sacramento", cursive;
+    font-size: 80px;
+    color: rgb( 0, 80, 67 );
+    text-align: center;
+}
+
+h2, h3, h4
+{
+    font-family: "Josefin Slab", serif;
+    text-align: center;
+}
+
+h2 
+{
+    color: rgb( 0, 80, 67 );
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb( 247, 177, 188 );
+}
+
+h3
+{
+    font-size: 30px;
+}
+
+h4
+{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+/*              ---- PARAGRAPHS ---- */
+p
+{
+    font-family: "Josefin Slab", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb( 0, 80, 67 );
+    text-align: center;
+}
+
+
+/*              ---- IMAGES ---- */
+
+/* Positions elements to sit side by side on the
+    browser csreen */
+.column 
+{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+
+@media screen and ( max-width: 1200px )
+{
+    .column 
+    {
+        width: 100%;
+        padding: 0px;
+        /* centers each column on the screen */
+        margin-left: -13px;
+    }
+}
+
+/* Specifically styles the first 7 imag tag elements
+contained in the div elements with the ".column" class */
+.column img:nth-child( -n + 7 )
+{
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.4), 
+    0px 6px 20px rgba( 0, 0, 0, 0.2 );
+}
+
+.recipe-container
+{
+    width: 500px;
+    height: 350px;
+
+    /* Top, right, left, and then bottom */
+    margin: 100px auto 180px;
+
+    /* Tells the browser how much 3D space an element
+    should take up on the screen */
+    perspective: 1000px;
+}
+
+
+/*              ---- MOBILE_SIZE_SCREEN ---- */
+@media screen and ( max-width: 600px ) 
+{
+    /* #recipes.column
+    {
+        height: 500px;
+    } */  
+    
+    .column img:nth-child( n - 7 )
+    {
+        width: 350px;
+        height: 225px;
+    }
+
+    .recipe-container
+    {
+        width: 350px;
+        height: 225px;
+    }
+}
+
+
+.recipe-card-background
+{
+    background-color: rgb( 149, 238, 223 );
+}
+
+
+/* Alternates the blue tile background on
+smaller sized screens */
+@media only screen and ( max-width: 120px )
+{
+    #pork
+    {
+        background-color: rgb( 255, 255, 255 );
+    }
+
+    #biscuits
+    {
+        background-color: rgb( 149, 238, 223 );
+    }
+}
+
+
+/*              ---- FEATURED_RECIPE ---- */
+
+/* tyles the featured recipe h3 tag */
+#featured-header
+{
+    font-family: "Sacramento", cursive;
+    font-size: 60px;
+    color: rgb( 0, 80, 67 );
+}
+
+#featured-main-text
+{
+    text-align: justify;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+/* Sets margin left to 0 because it is not needed on a
+small screen and centers the text */
+@media screen and ( max-width: 1200px ) {
+    #featured-main-text 
+    {
+        margin-left: 0;
+    }
+}
+
+/* Specifically styles the img tag nested within the div elements 
+of #featured and .recipe-container in the Featured Recipe section */
+@media screen and ( min-width: 1500px ) 
+{
+    #featured .column img 
+    {
+        width: 700px;
+
+        /* Automatically calculates the image height based on 
+        the width input */
+        height: auto; 
+        margin-left: -100px;
+
+        /* Margin left and top will override previous margin 
+        styling from the .recipe-container class selector */
+        margin-top: -20px; 
+    }
+}
+
+/* Adjusts the position of the featured image to be centered 
+on the screen when the width is 1499px or less */
+@media screen and ( max-width: 1499px ) 
+{
+    #featured .column img 
+    {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and ( max-width: 600px ) 
+{
+    #featured .recipe-card-background 
+    {
+        height: 300px;
+    }
+    #featured .column img 
+    {
+        margin-top: -65px;
+    }
+} 
+
+#featured-button 
+{
+    /* Positions the recipe button on its own line from the other 
+    elements within the div */
+    display: block; 
+    margin: 60px auto 0px;
+    background-color: rgb( 1, 128, 106 );
+    border-radius: 35px;
+
+    /* Removes default border set by the browser when border-radius is used */
+    border: none; 
+    font-family: "Josefin Slab", serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Specifically styles the hover effect of the recipe button in the
+Featured Recipe section */
+#featured-button:hover 
+{
+    background-color: rgb( 247, 177, 188 );
+}
+
+/*              ---- IMAGE FLIP ---- */
+
+/* Positions the flip effect, defines transition time, 
+and defines a 3D effect */
+.flip 
+{
+    position: relative;
+
+    /* Setting the width and height values to 100% will 
+    allow the effect to take up 100% of the space available */
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+    transition: 0.5s ease-in-out;
+
+    /* Treats elements as 3D objects instead of flat (2D) objects */
+    transform-style: preserve-3d; 
+}
+
+.flip:hover 
+{
+    /* Rotates an element horizontally */
+    /* transform: rotateY( -180deg );  */
+    transform: none;
+}
+
+.flip-front,
+.flip-back 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-back 
+{
+    background-color: rgb( 149, 238, 223 );
+    border: 2px solid white;
+
+    /* Subtracts another 180 degrees from the -180 degrees it 
+    moved to previously, so the text can be read properly */
+    transform: rotateY 
+    (
+        180deg
+    ); 
+}
+
+.text-container 
+{
+    padding-top: 70px;
+}
+
+
+@media only screen and ( max-width: 600px ) 
+{
+    .text-container 
+    {
+        padding-top: 0px;
+    }
+}
+
+
+
+/*              ---- RECIPE BUTTON ---- */
+input[ type="button" ] 
+{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 11px 17px;
+    color: rgb(1, 128, 106);
+    cursor: pointer;
+}
+
+input[ type="button" ]:hover 
+{
+    background-color: rgb( 247, 177, 188 );
+    color: white;
+}
+
+/*              ---- CONTACT FORM CSS ---- */
+#contact 
+{
+    display: block;
+    margin-bottom: 70px;
+}
+
+form 
+{
+    /* This will display the form in table format as rows and columns */
+    display: table; 
+    padding: 15px;
+
+    /* Browser will automatically calculate margins to center the form 
+    on the screen */
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* This will specifically target the input tags that are nested 
+within the form tags */
+form input 
+{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    color: rgb( 165, 165, 165 );
+    border: 2px solid rgb( 165, 165, 165 );
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+
+    /* Transition back to light gray when a user clicks 
+    away from an input field */
+    transition: 0.3 ease-out; 
+}
+
+form input:focus 
+{
+    border: 2px solid rgb( 1, 128, 106) ;
+    color: black;
+
+    /* Removes extra default border added when focus is 
+    triggered on click */
+    outline: none; 
+    transition: 0.3s ease-out;
+}
+
+label 
+{
+    font-family: "Josefin Slab", serif; 
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+textarea 
+{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+
+    /* Will allow the user to resize the text area in both 
+    width and height */
+    resize: both; 
+    border: 3px solid rgb( 165, 165, 165 );
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace;
+    color: rgb( 165, 165, 165 );
+    font-size: 15px;
+
+    /* Will transition back to light grey */
+    transition: 0.3s ease-out; 
+}
+
+textarea:focus 
+{
+    color: black;
+    border: 3px solid rgb( 1, 128, 106 );
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+input[ type="submit" ] 
+{
+    background-color: rgb( 1, 128, 106 );
+    border: none;
+    border-radius: 35px;
+    font-family: "Josefin Slab", serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+
+    /* Positions the submit button to the bottom right of the form */
+    float: right; 
+}
+
+input[ type="submit" ]:hover 
+{
+    background-color: rgb( 247, 177, 188 );
+}
+
+
+
+/*              ---- RECIPE_MODAL ---- */
+.recipe-modal
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* This color code cetates a transparent background
+    that covers the whole screen display */
+    background-color: rgba( 255, 255, 255, 0.5 );
+
+    /* The following rule set will make the recipe card take-up the 
+    whole screen, so users cannot click on anything else. So long as 
+    this window is open */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*              ---- RECIPE_CONTENT ---- */
+/* NOTE: Since the recipe-modal class has a fixed position. The
+position of the recipe-content class should be relative, to 
+ensure it is diaplayed within the parent element: Which is the 
+div with the class recipe-modal */
+.recipe-content
+{
+    position: relative;
+    background-color: rgb( 255, 255, 255 );
+
+    /* View-height (vh) and View-width (vw): Are called Viewport Units.
+    They work by calculating the viewport devices width and height, 
+    and adjust the size of the content according to the size of the 
+    screen. This helps make the content more fluid. Using the viewport
+    units the top and left properties position the content in a set 
+    amount based on the size of the screen.
+     */
+    top: 15vh;
+    left: 27vw;
+    width: 45vw;
+    height: 70%;
+    box-shadow: 0 2px 10px 5px rgba( 0, 0, 0, 0.2 );
+
+    /* The "box-sizing" property sets how the total width and height
+    of an element (recipe-content) is calculated. The border-box value 
+    means any added borders and paddings are included in the element's
+    width and height, without expanding outside the box. This helps keep
+    the content contained within the size of the element */
+    box-sizing: border-box;
+}
+
+
+
+/*              ---- SPAN_ELEMENT ---- 
+This contains the HTML for the multiplication symbol. This element will 
+act as a button to close the recipe-modal. */
+.close-btn
+{
+    color: rgb( 1, 128, 106 );
+    font-size: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    float: right;
+    padding-right: 10px;
+}
+
+
+
+/*              ---- MODAL_HEADER ---- 
+Adjusts the padding above the header */
+.modal-header
+{
+    padding-top: 20px;
+}
+
+.modal-body
+{
+    padding: 20px;
+}
+
+.row
+{
+    display: flex;
+    justify-content: center;
+}
+
+.rp-column-1
+{
+    width: 33%;
+}
+
+.rp-column-2
+{
+    width: 67%;
+}
+
+
+/*              ---- UL_RECIPE-LIST ---- */
+.recipe-list
+{
+    margin-left: -30px;
+    font-family: "Josefin Slab", serif;
+    font-size: 18px;
+
+    /* This will override the flex value property within the
+    "UL" type selector and list each item one after the other */
+    display: block;
+
+    /* Overrides the border property and the value inside the 
+    "UL" type selector */
+    border: none;
+
+    /* Overrides the background color in the "UL" type selector */
+    background-color: transparent;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+
+/*              ---- RECIPE-DIRECTIONS ---- */
+.recipe-directions
+{
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

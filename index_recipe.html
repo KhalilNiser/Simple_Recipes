@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple Recipes Webpage using HTML CSS and JavaScript">
+    <meta name="author" content="Khalil Niser">
+    <!--                ---- LINK_CSS ---- -->
+    <link rel="stylesheet" type="text/css" href="/CSS/style_recipe.css">
+    <title>Simple Recipes</title>
+</head>
+<body>
+
+    <!-- NAV_BAR -->
+    <nav class="nav-bar">
+        <!-- <ul> -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="drop"><a href="#recipes">Recipes</a>
+
+                <!-- ROLLOVER-MENU_DIV -->
+                <div class="rollover-menu">
+                    <a href="#featured">Featured Recipe</a>
+                    <a href="#pasta">Pasta</a>
+                    <a href="#chicken">Chicken</a>
+                    <a href="#pork">Pork</a>
+                    <a href="#biscuits">Biscuits</a>
+                    <a href="#fish">Fish</a>
+                    <a href="#dessert">Dessert</a>
+                <!-- END_ROLLOVER-MENU_DIV -->
+                </div>
+
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        <!-- END_<ul> -->
+        </ul>
+    <!-- END_NAV_BAR -->
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Simple Recipes</h1>
+    <!-- END_HEADER -->
+    </header>
+
+    <!-- RECIPES_SECTION -->
+    <section>
+        <!-- FEATURED_RECIPES_CLASS_CONTAINER_ID_FEATURED_DIV -->
+        <div class="container" id="featured">
+            <h2>Featured Recipe</h2>
+            <!-- COLUMN_RECIPE-CARD-BACKGROUND_DIV -->
+            <div class="column recipe-card-background">
+                <!-- RECIPE_CONTAINER_IMAGE_DIV -->
+                <div class="recipe-container">
+                    <img src="/images/skillet-pizza.jpeg">
+                <!-- END_RECIPE-CONTAINER_IMAGE_DIV -->
+                </div>
+            <!-- END_COLUMN_RECIPE-CARD-BACKGROUND_DIV -->
+            </div>
+
+            <!-- CLASS:_COLUMN_DIV -->
+            <div class="column">
+                <h3 id="featured-header">Deep Dish Skillet Pizza</h3>
+                <h4>Prep Time</h4>
+                <p>30 - 40 minutes</p>
+                <h4>Level:</h4>
+                <p>Medium</p>
+                <p id="featured-main-text">
+                    Deep dish pizza has got a lot going for it:
+                    A thick crust that's tender and chewy on the inside,
+                    but nicely crisped on the outside; a little extra room for piling
+                    on the toppings; and, deep dish is less needy than its thin crust
+                    style counterpart, which requires some care when rolling and stretching.
+                    Here, you just push the dough into the skillet and you're cooking.
+                    Save the leftovers for lunch!
+                </p>
+
+                <input type="button" value="Recipe" id="featured-button" 
+                class="modal-button" href="#recipeModalOne">
+
+            <!-- END_CLASS:_COLUMN_DIV -->
+            </div>
+        <!-- END_FEATURED_RECIPES_CONTAINER_CLASS_FEATURED_ID_DIV -->
+        </div>
+
+
+        <!--                ---- RECIPE_CARDS ---- -->
+        <!-- CONTAINER_CLASS_RECIPES_ID_DIV -->
+        <div class="container" id="recipes">
+            <h2>Recipes</h2>
+
+            <!-- PASTA -->
+            <div class="column" id="pasta">
+
+                <!-- RECIPE_CONTAINER-2_DIV -->
+                <div class="recipe-container">
+                    <h3>Saucy Tortelloni Parm</h3>
+
+                    <!-- FLIP_DIV -->
+                    <div class="flip">
+                        <!-- FRONT_DIV -->
+                        <div class="flip-front">
+                            <img src="/images/tortelloni.jpeg">
+
+                        </div>
+                        <!-- BACK_DIV -->
+                        <div class="flip-back">
+                            <!-- TEXT-CONTAINER_DIV -->
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>20 - 30 minutes</p>
+                                <h4>Level:</h4>
+                                <p>Easy</p>
+
+                                <input class="modal-button" href="#recipeModalTwo" 
+                                type="button" value="Recipe">
+                            <!-- END_TEXT-CONTAINER_DIV -->
+                            </div>
+                        <!-- END_BACK_DIV -->
+                        </div>
+                    <!-- END_FLIP_DIV -->
+                    </div>
+                <!-- RECIPE-CONTAINER_DIV -->
+                </div>
+            <!-- END_PASTA_DIV -->
+            </div>
+
+
+
+            <!-- CHICKEN -->
+            <div class="column recipe-card-background" id="chicken">
+
+                <!-- RECIPE_CONTAINER-2_DIV -->
+                <div class="recipe-container">
+                    <h3>Mediterranean Chicken Thighs</h3>
+
+                    <!-- FLIP_DIV -->
+                    <div class="flip">
+                        <!-- FRONT_DIV -->
+                        <div class="flip-front">
+                            <img src="/images/chicken-thighs.jpeg">
+
+                        </div>
+                        <!-- BACK_DIV -->
+                        <div class="flip-back">
+                            <!-- TEXT-CONTAINER_DIV -->
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>20 - 30 minutes</p>
+                                <h4>Level:</h4>
+                                <p>Easy</p>
+
+                                <input class="modal-button" href="#recipeModalThree" 
+                                type="button" value="Recipe">
+                            <!-- END_TEXT-CONTAINER_DIV -->
+                            </div>
+                        <!-- END_BACK_DIV -->
+                        </div>
+                    <!-- END_FLIP_DIV -->
+                    </div>
+                <!-- RECIPE-CONTAINER_DIV -->
+                </div>
+            <!-- END_CHICKEN_DIV -->
+            </div>
+
+
+
+            <!-- PORK -->
+            <div class="column recipe-card-background" id="pork">
+
+                <!-- RECIPE_CONTAINER-2_DIV -->
+                <div class="recipe-container">
+                    <h3>Crispy Pork Katsu & Rice</h3>
+
+                    <!-- FLIP_DIV -->
+                    <div class="flip">
+                        <!-- FRONT_DIV -->
+                        <div class="flip-front">
+                            <img src="/images/pork-katsu.jpeg">
+
+                        </div>
+                        <!-- BACK_DIV -->
+                        <div class="flip-back">
+                            <!-- TEXT-CONTAINER_DIV -->
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>20 - 30 minutes</p>
+                                <h4>Level:</h4>
+                                <p>Medium</p>
+
+                                <input class="modal-button" href="#recipeModalFour" 
+                                type="button" value="Recipe">
+                            <!-- END_TEXT-CONTAINER_DIV -->
+                            </div>
+                        <!-- END_BACK_DIV -->
+                        </div>
+                    <!-- END_FLIP_DIV -->
+                    </div>
+                <!-- RECIPE-CONTAINER_DIV -->
+                </div>
+            <!-- END_PORK_DIV -->
+            </div>
+
+
+
+
+            <!-- BISCUITS -->
+            <div class="column" id="biscuits">
+
+                <!-- RECIPE_CONTAINER-2_DIV -->
+                <div class="recipe-container">
+                    <h3>Cheddar Cheese Biscuits</h3>
+
+                    <!-- FLIP_DIV -->
+                    <div class="flip">
+                        <!-- FRONT_DIV -->
+                        <div class="flip-front">
+                            <img src="/images/cheddar-biscuits.jpeg">
+
+                        </div>
+                        <!-- BACK_DIV -->
+                        <div class="flip-back">
+                            <!-- TEXT-CONTAINER_DIV -->
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>40 - 50 minutes</p>
+                                <h4>Level:</h4>
+                                <p>Medium</p>
+
+                                <input class="modal-button" href="#recipeModalFive" 
+                                type="button" value="Recipe">
+                            <!-- END_TEXT-CONTAINER_DIV -->
+                            </div>
+                        <!-- END_BACK_DIV -->
+                        </div>
+                    <!-- END_FLIP_DIV -->
+                    </div>
+                <!-- RECIPE-CONTAINER_DIV -->
+                </div>
+            <!-- END_BISCUITS_DIV -->
+            </div>
+
+
+
+            <!-- FISH -->
+            <div class="column" id="fish">
+
+                <!-- RECIPE_CONTAINER-2_DIV -->
+                <div class="recipe-container">
+                    <h3>Baked Cod & Scalloped Potatoes</h3>
+
+                    <!-- FLIP_DIV -->
+                    <div class="flip">
+                        <!-- FRONT_DIV -->
+                        <div class="flip-front">
+                            <img src="/images/baked-cod.jpeg">
+
+                        </div>
+                        <!-- BACK_DIV -->
+                        <div class="flip-back">
+                            <!-- TEXT-CONTAINER_DIV -->
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>30 - 40 minutes</p>
+                                <h4>Level:</h4>
+                                <p>Easy</p>
+
+                                <input class="modal-button" href="#recipeModalSix" 
+                                type="button" value="Recipe">
+                            <!-- END_TEXT-CONTAINER_DIV -->
+                            </div>
+                        <!-- END_BACK_DIV -->
+                        </div>
+                    <!-- END_FLIP_DIV -->
+                    </div>
+                <!-- RECIPE-CONTAINER_DIV -->
+                </div>
+            <!-- END_FISH_DIV -->
+            </div>
+
+
+
+            <!-- DESSERT -->
+            <div class="column recipe-card-background" id="dessert">
+
+                <!-- RECIPE_CONTAINER-2_DIV -->
+                <div class="recipe-container">
+                    <h3>S'mores Cake'</h3>
+
+                    <!-- FLIP_DIV -->
+                    <div class="flip">
+                        <!-- FRONT_DIV -->
+                        <div class="flip-front">
+                            <img src="/images/smores.jpeg">
+
+                        </div>
+                        <!-- BACK_DIV -->
+                        <div class="flip-back">
+                            <!-- TEXT-CONTAINER_DIV -->
+                            <div class="text-container">
+                                <h4>Prep Time:</h4>
+                                <p>50 - 60 minutes</p>
+                                <h4>Level:</h4>
+                                <p>Medium</p>
+
+                                <input class="modal-button" href="#recipeModalSeven" 
+                                type="button" value="Recipe">
+                            <!-- END_TEXT-CONTAINER_DIV -->
+                            </div>
+                        <!-- END_BACK_DIV -->
+                        </div>
+                    <!-- END_FLIP_DIV -->
+                    </div>
+                <!-- RECIPE-CONTAINER_DIV -->
+                </div>
+            <!-- END_DESSERT_DIV -->
+            </div>
+
+        <!-- END_CONTAINER_CLASS_RECIPES_ID_DIV -->
+        </div>
+    <!-- END_RECIPES_SECTION -->
+    </section>
+
+
+
+    <!--                ---- RECIPE_MODALS ---- -->
+    <!--                ---- RECIPE_MODAL_ONE ---- -->
+    <div class="recipe-modal" id="recipeModalOne">
+
+        <!--                ---- Modal_Content_DIV ---- -->
+        <div class="recipe-content" id="recipeId">
+            <span class="close-btn">&#215;</span>
+            <div class="modal-header">
+                <h3>Deep Dish Skillet Pizza</h3>
+            </div>
+
+            <!-- ---- MODAL_BODY_DIV ---- -->
+            <div class="modal-body">
+
+                <!-- SKILLET_PIZZA_ROW_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV ---- -->
+                    <div class="rp-column-1">
+                        <h4>Cook Time</h4>
+                        <p>30 - 40 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Servings</h4>
+                        <p>6</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Level</h4>
+                        <p>Medium</p>
+                    </div>
+
+                </div>
+
+                <!-- ---- SKILLET_PIZZA_ROW_INGREDIENTS_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV -->
+                    <div class="rp-column-1">
+                        <h4>Ingredients</h4>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    <!-- ---- END_RP-COLUMN-1_DIV -->
+                    </div>
+
+                    <!-- ---- RP-COLUMN-2_DIV ---- -->
+                    <div class="rp-column-2">
+                        <h4>Directions</h4>
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    <!-- ---- RP-COLUMN-2_DIV ---- -->
+                    </div>
+                <!-- ---- END_SKILLET_PIZZA_ROW_INGREDIENTS_DIV -->
+                </div>
+
+            <!-- ---- MODAL_BODY_DIV ---- -->
+            </div>
+
+        <!--                ---- MODAL_CONTENT_DIV -->
+        </div>
+
+    <!--                ---- RECIPE_MODAL_ONE ---- -->
+    </div>
+
+
+
+
+    <!--                ---- RECIPE_MODAL_TWO ---- -->
+    <div class="recipe-modal" id="recipeModalTwo">
+
+        <!--                ---- RECIPE_Content_DIV ---- -->
+        <div class="recipe-content" id="recipeId">
+            <span class="close-btn">&#215;</span>
+            <div class="modal-header">
+                <h3>Sausy Tortelloni Parm</h3>
+            </div>
+
+            <!-- ---- MODAL_BODY_DIV_2 ---- -->
+            <div class="modal-body">
+
+                <!-- SAUSY_TORTELLONI_ROW_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV ---- -->
+                    <div class="rp-column-1">
+                        <h4>Cook Time</h4>
+                        <p>20 - 30 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Servings</h4>
+                        <p>2</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Level</h4>
+                        <p>Easy</p>
+                    </div>
+
+                <!-- SAUSY_TORTELLONI_ROW_DIV -->
+                </div>
+
+                <!-- ---- SAUSY_TORTELLONI_PARM_ROW_INGREDIENTS_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV -->
+                    <div class="rp-column-1">
+                        <h4>Ingredients</h4>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+
+                    <!-- ---- RP-COLUMN-2_DIV ---- -->
+                    <div class="rp-column-2">
+                        <h4>Directions</h4>
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    <!-- ---- END_RP-COLUMN-2_DIV ---- -->
+                    </div>
+                    
+                <!-- ---- END_SAUSY_TORTELLONI_PARM_ROW_INGREDIENTS_DIV -->
+                </div>
+
+            <!-- ---- END_MODAL_BODY_DIV_2 ---- -->
+            </div>
+
+        <!--                ---- END_RECIPE_CONTENT_DIV -->
+        </div>
+
+    <!--                ---- END_RECIPE_MODAL_TWO ---- -->
+    </div>
+
+
+
+
+
+    <!--                ---- RECIPE_MODAL_THREE ---- -->
+    <div class="recipe-modal" id="recipeModalThree">
+
+        <!--                ---- RECIPE_Content_DIV ---- -->
+        <div class="recipe-content" id="recipeId">
+            <span class="close-btn">&#215;</span>
+            <div class="modal-header">
+                <h3>Mediterranean Chicken Thighs</h3>
+            </div>
+
+            <!-- ---- MODAL_BODY_DIV_3 ---- -->
+            <div class="modal-body">
+
+                <!-- CHICKEN_THIGHS_ROW_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV ---- -->
+                    <div class="rp-column-1">
+                        <h4>Cook Time</h4>
+                        <p>20 - 30 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Servings</h4>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Level</h4>
+                        <p>Easy</p>
+                    </div>
+
+                <!-- CHICKEN_THIGHS_ROW_DIV -->
+                </div>
+
+                <!-- ---- MEDITERRANEAN_CHICKEN_ROW_INGREDIENTS_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV -->
+                    <div class="rp-column-1">
+                        <h4>Ingredients</h4>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+
+                    <!-- ---- RP-COLUMN-2_DIV ---- -->
+                    <div class="rp-column-2">
+                        <h4>Directions</h4>
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    <!-- ---- END_RP-COLUMN-2_DIV ---- -->
+                    </div>
+                    
+                <!-- ---- END_MEDITERRANEAN_CHICKEN_ROW_INGREDIENTS_DIV -->
+                </div>
+
+            <!-- ---- END_MODAL_BODY_DIV_3 ---- -->
+            </div>
+
+        <!-- ---- END_RECIPE_CONTENT_DIV -->
+        </div>
+
+    <!-- ---- END_RECIPE_MODAL_THREE ---- -->
+    </div>
+
+
+
+
+
+    <!--                ---- RECIPE_MODAL_FOUR ---- -->
+    <div class="recipe-modal" id="recipeModalFour">
+
+        <!--                ---- RECIPE_Content_DIV ---- -->
+        <div class="recipe-content" id="recipeId">
+            <span class="close-btn">&#215;</span>
+            <div class="modal-header">
+                <h3>Crispy Pork Katsu and Rice</h3>
+            </div>
+
+            <!-- ---- MODAL_BODY_DIV_4 ---- -->
+            <div class="modal-body">
+
+                <!-- CRISPY_PORK_ROW_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV ---- -->
+                    <div class="rp-column-1">
+                        <h4>Cook Time</h4>
+                        <p>20 - 30 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Servings</h4>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Level</h4>
+                        <p>Easy</p>
+                    </div>
+
+                <!-- CHICKEN_THIGHS_ROW_DIV -->
+                </div>
+
+                <!-- ---- CRISPY_PORK_ROW_INGREDIENTS_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV -->
+                    <div class="rp-column-1">
+                        <h4>Ingredients</h4>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+
+                    <!-- ---- RP-COLUMN-2_DIV ---- -->
+                    <div class="rp-column-2">
+                        <h4>Directions</h4>
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    <!-- ---- END_RP-COLUMN-2_DIV ---- -->
+                    </div>
+                    
+                <!-- ---- CRISPY_PORK_ROW_INGREDIENTS_DIV -->
+                </div>
+
+            <!-- ---- END_MODAL_BODY_DIV_4 ---- -->
+            </div>
+
+        <!-- ---- END_RECIPE_CONTENT_DIV -->
+        </div>
+
+    <!-- ---- END_RECIPE_MODAL_FOUR ---- -->
+    </div>
+
+
+
+
+
+    <!--                ---- RECIPE_MODAL_FIVE ---- -->
+    <div class="recipe-modal" id="recipeModalFive">
+
+        <!--                ---- RECIPE_Content_DIV ---- -->
+        <div class="recipe-content" id="recipeId">
+            <span class="close-btn">&#215;</span>
+            <div class="modal-header">
+                <h3>Cheddar Cheese Biscuits</h3>
+            </div>
+
+            <!-- ---- MODAL_BODY_DIV_5 ---- -->
+            <div class="modal-body">
+
+                <!-- CHEDDAR_CHEESE_ROW_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV ---- -->
+                    <div class="rp-column-1">
+                        <h4>Cook Time</h4>
+                        <p>40 - 50 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Servings</h4>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Level</h4>
+                        <p>Easy</p>
+                    </div>
+
+                <!-- CHEDDAR_CHEESE_ROW_DIV -->
+                </div>
+
+                <!-- ---- CHEDDAR_CHEESE_INGREDIENTS_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV -->
+                    <div class="rp-column-1">
+                        <h4>Ingredients</h4>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+
+                    <!-- ---- RP-COLUMN-2_DIV ---- -->
+                    <div class="rp-column-2">
+                        <h4>Directions</h4>
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    <!-- ---- END_RP-COLUMN-2_DIV ---- -->
+                    </div>
+                    
+                <!-- ---- CHEDDAR_CHEESE_ROW_INGREDIENTS_DIV -->
+                </div>
+
+            <!-- ---- END_MODAL_BODY_DIV_5 ---- -->
+            </div>
+
+        <!-- ---- END_RECIPE_CONTENT_DIV -->
+        </div>
+
+    <!-- ---- END_RECIPE_MODAL_FIVE ---- -->
+    </div>
+
+
+
+
+
+    <!--                ---- RECIPE_MODAL_SIX ---- -->
+    <div class="recipe-modal" id="recipeModalSix">
+
+        <!--                ---- RECIPE_Content_DIV ---- -->
+        <div class="recipe-content" id="recipeId">
+            <span class="close-btn">&#215;</span>
+            <div class="modal-header">
+                <h3>Baked Cod and Scalloped Potatoes</h3>
+            </div>
+
+            <!-- ---- MODAL_BODY_DIV_6 ---- -->
+            <div class="modal-body">
+
+                <!-- BAKED_COD_ROW_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV ---- -->
+                    <div class="rp-column-1">
+                        <h4>Cook Time</h4>
+                        <p>30 - 40 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Servings</h4>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Level</h4>
+                        <p>Easy</p>
+                    </div>
+
+                <!-- CHICKEN_THIGHS_ROW_DIV -->
+                </div>
+
+                <!-- ---- BAKED_COD_ROW_INGREDIENTS_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV -->
+                    <div class="rp-column-1">
+                        <h4>Ingredients</h4>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+
+                    <!-- ---- RP-COLUMN-2_DIV ---- -->
+                    <div class="rp-column-2">
+                        <h4>Directions</h4>
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    <!-- ---- END_RP-COLUMN-2_DIV ---- -->
+                    </div>
+                    
+                <!-- ---- END_MEDITERRANEAN_CHICKEN_ROW_INGREDIENTS_DIV -->
+                </div>
+
+            <!-- ---- END_MODAL_BODY_DIV_6 ---- -->
+            </div>
+
+        <!-- ---- END_RECIPE_CONTENT_DIV -->
+        </div>
+
+    <!-- ---- END_RECIPE_MODAL_SIX ---- -->
+    </div>
+
+
+
+
+    <!--                ---- RECIPE_MODAL_SEVEN ---- -->
+    <div class="recipe-modal" id="recipeModalSeven">
+
+        <!--                ---- RECIPE_Content_DIV ---- -->
+        <div class="recipe-content" id="recipeId">
+            <span class="close-btn">&#215;</span>
+            <div class="modal-header">
+                <h3>M'mores Cake</h3>
+            </div>
+
+            <!-- ---- MODAL_BODY_DIV_7 ---- -->
+            <div class="modal-body">
+
+                <!-- BAKED_COD_ROW_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV ---- -->
+                    <div class="rp-column-1">
+                        <h4>Cook Time</h4>
+                        <p>50 - 60 minutes</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Servings</h4>
+                        <p>4</p>
+                    </div>
+                    <div class="rp-column-1">
+                        <h4>Level</h4>
+                        <p>Easy</p>
+                    </div>
+
+                <!-- SMORES_CAKE_ROW_DIV -->
+                </div>
+
+                <!-- ---- SMORES_CAKE_ROW_INGREDIENTS_DIV -->
+                <div class="row">
+
+                    <!-- ---- RP-COLUMN-1_DIV -->
+                    <div class="rp-column-1">
+                        <h4>Ingredients</h4>
+                        <ul class="recipe-list">
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
+                    </div>
+
+                    <!-- ---- RP-COLUMN-2_DIV ---- -->
+                    <div class="rp-column-2">
+                        <h4>Directions</h4>
+                        <p class="recipe-directions">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    <!-- ---- END_RP-COLUMN-2_DIV ---- -->
+                    </div>
+                    
+                <!-- ---- END_SMORES_CAKE_ROW_INGREDIENTS_DIV -->
+                </div>
+
+            <!-- ---- END_MODAL_BODY_DIV_7 ---- -->
+            </div>
+
+        <!-- ---- END_RECIPE_CONTENT_DIV -->
+        </div>
+
+    <!-- ---- END_RECIPE_MODAL_SEVEN ---- -->
+    </div>
+
+
+    <!--                ---- CONTACT_FORM_SECTION ---- -->
+    <section>
+
+        <!-- CONTAINER_CONTACT_ID_DIV -->
+        <div class="container" id="contact">
+            <h2>Contact us</h2>
+            <h3>Want More Information About Our Recipes<br>
+                Contact us Below
+            </h3>
+
+            <div id="validateMsg"></div>
+
+            <!--                ---- FORM ---- -->
+            <form id="contactForm">
+                <input id="firstName" type="text" placeholder="First Name">
+                <input id="lastName" type="text" placeholder="Last Name">
+                <br>
+                <input id="email" type="email" placeholder="Email">
+                <input id="phone" type="tel" placeholder="Phone Number">
+                <br>
+                <input type="checkbox" id="subscription">
+                <label for="subscription">Subscribe for Weekly Recipes!</label><br>
+                <br>
+                <textarea id="message" placeholder="Type Message Here..." ></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            <!--                ---- END_FORM ---- -->
+            </form>
+        <!-- END_CONTAINER_CONTACT_ID_DIV -->
+        </div>
+
+    <!--                ---- END_CONTACT_FORM_SECTION ---- -->
+    </section>
+
+
+    <!--                ---- FOOTER ---- -->
+    <footer>
+        <!--                ---- TABLE ---- -->
+        <table>
+            <!--                ---- TABLE_ROW_(<tr>) ---- -->
+            <tr>
+                <!--                ---- COPY_WRITE_&copy_<td> -->
+                <td>
+                    <p>Simple Recipes &copy;</p>
+
+                <!--                ---- END_COPY_WRITE_&copy_<td> -->
+                </td>
+                <!--                ---- ADDRESS_<td> -->
+                <td>
+                    <p>310 SW 4th AVE Suite 200</p>
+                    <p>Portland OR, 97204</p>
+
+                <!--                ---- END_ADDRESS_<td> -->
+                </td>
+                <!--                ---- PHONE_<td> -->
+                <td>
+                    <p>(503) 206-6915</p>
+
+                <!--                ---- PHONE_<td> -->
+                </td>
+            <!--                ---- END_TABLE_ROW_(<tr>) ---- -->
+            </tr>
+        <!--                ---- END_TABLE ---- -->
+        </table>
+    <!--                ---- END_FOOTER ---- -->
+    </footer>
+    
+
+    <!--                ---- LINK_JAVASCRIPT ---- -->
+    <script src="/JS/script_recipe.js"></script>
+</body>
+</html>
